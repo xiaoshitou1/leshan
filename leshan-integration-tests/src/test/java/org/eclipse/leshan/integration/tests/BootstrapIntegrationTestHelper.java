@@ -134,6 +134,7 @@ public class BootstrapIntegrationTestHelper extends IntegrationTestHelper {
         LeshanClientBuilder builder = new LeshanClientBuilder(getCurrentEndpoint());
         builder.setObjects(objects);
         client = builder.build();
+        setupClientMonitoring();
     }
 
     public BootstrapSecurityStore bsSecurityStore() {
